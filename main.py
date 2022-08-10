@@ -7,8 +7,8 @@ To pass, all automated testing of your inputs have to pass their tests.
 
 # This function has a syntax error, no tests will run until this function is
 # fixed first
-#def invalid(prefix="https", domain):
-#    pass
+def invalid(domain, prefix="https",):
+    pass
 
 
 # The following function needs to use variable arguments to work. The developer
@@ -23,7 +23,7 @@ def create_urls(domains):
 # argument to be a string. Update the function so that:
 # - It accepts a new keyword argument named `verified` which default to `False`
 # - Changes `metadata` argument to be a variable keyword argument
-def social_media_user(username, metadata):
+def social_media_user(username, **metadata):
     information = {
         "username": username,
         "verified": False
